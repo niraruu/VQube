@@ -1,0 +1,6 @@
+{
+  "name": "OmniChannel Customer Dashboard",
+  "description": "A premium AI-powered communication workspace and CRM + campaign operating system for businesses using WhatsApp, Bulk SMS, and smart automations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

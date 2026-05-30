@@ -1,0 +1,682 @@
+{
+  "users": [
+    {
+      "id": "u-1",
+      "email": "nirjarajain01@gmail.com",
+      "fullName": "Nirjara Jain",
+      "role": "ORG_OWNER",
+      "orgId": "org-123"
+    },
+    {
+      "id": "u-2",
+      "email": "admin@growthhq.co",
+      "fullName": "Sarah Connor",
+      "role": "ORG_ADMIN",
+      "orgId": "org-123"
+    },
+    {
+      "id": "u-3",
+      "email": "agent@growthhq.co",
+      "fullName": "Marcus Wright",
+      "role": "SUPPORT_AGENT",
+      "orgId": "org-123"
+    },
+    {
+      "id": "u-4",
+      "email": "marketing@growthhq.co",
+      "fullName": "John Connor",
+      "role": "MARKETING_MANAGER",
+      "orgId": "org-123"
+    },
+    {
+      "id": "u-5",
+      "email": "viewer@growthhq.co",
+      "fullName": "Kyle Reese",
+      "role": "VIEWER",
+      "orgId": "org-123"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "c-1",
+      "name": "Rajesh Kumar",
+      "phone": "+919876543210",
+      "email": "rajesh.kumar@gmail.com",
+      "tags": [
+        "active",
+        "enterprise",
+        "high-value"
+      ],
+      "segment": "Premium Users",
+      "createdAt": "2026-01-15T09:00:00Z",
+      "optInStatus": true,
+      "spamRiskScore": 12,
+      "notes": [
+        {
+          "id": "n-1",
+          "author": "Sarah Connor",
+          "text": "Enterprise executive. Prefers WhatsApp communication.",
+          "createdAt": "2026-03-10T11:00:00Z"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a-1",
+          "type": "campaign",
+          "title": "Premium Welcome Campaign",
+          "details": "Sent via WhatsApp. Opened.",
+          "timestamp": "2026-05-10T14:00:00Z"
+        },
+        {
+          "id": "a-2",
+          "type": "interaction",
+          "title": "AI Assistant Query",
+          "details": "Asked about integration endpoints. Summary: Positive sentiment.",
+          "timestamp": "2026-05-20T10:15:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c-2",
+      "name": "Esther Howard",
+      "phone": "+14155552671",
+      "email": "esther.howard@outlook.com",
+      "tags": [
+        "lead",
+        "trial"
+      ],
+      "segment": "Leads",
+      "createdAt": "2026-04-20T14:30:00Z",
+      "optInStatus": true,
+      "spamRiskScore": 5,
+      "notes": [],
+      "activities": [
+        {
+          "id": "a-3",
+          "type": "interaction",
+          "title": "Opt-In Recorded",
+          "details": "Subscribed via Web Sign-Up widget",
+          "timestamp": "2026-04-20T14:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c-3",
+      "name": "Amir Al-Othman",
+      "phone": "+971501234567",
+      "email": "amir.othman@dubaihq.ae",
+      "tags": [
+        "inactive",
+        "winback"
+      ],
+      "segment": "Inactive Users",
+      "createdAt": "2025-11-05T08:00:00Z",
+      "optInStatus": true,
+      "spamRiskScore": 35,
+      "notes": [
+        {
+          "id": "n-2",
+          "author": "John Connor",
+          "text": "Stopped using widget after trial expired. Attempt SMS win-back.",
+          "createdAt": "2026-02-01T15:00:00Z"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a-4",
+          "type": "campaign",
+          "title": "SMS Re-engagement Promo",
+          "details": "Delivery failure: unreachable.",
+          "timestamp": "2026-03-01T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c-4",
+      "name": "Aki Tanaka",
+      "phone": "+818012345678",
+      "email": "tanaka.aki@nifty.com",
+      "tags": [
+        "active",
+        "trial-ends"
+      ],
+      "segment": "Trial Users",
+      "createdAt": "2026-05-10T02:00:00Z",
+      "optInStatus": true,
+      "spamRiskScore": 2,
+      "notes": [],
+      "activities": [
+        {
+          "id": "a-5",
+          "type": "interaction",
+          "title": "Onboarding Flow Triggered",
+          "details": "Received Day 1 WhatsApp guide",
+          "timestamp": "2026-05-10T02:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c-5",
+      "name": "Dianne Russell",
+      "phone": "+16175550182",
+      "email": "dianne.r@gmail.com",
+      "tags": [
+        "re-engage",
+        "opt-out-risk"
+      ],
+      "segment": "Re-engagement",
+      "createdAt": "2026-02-14T11:45:00Z",
+      "optInStatus": true,
+      "spamRiskScore": 48,
+      "notes": [
+        {
+          "id": "n-3",
+          "author": "Marcus Wright",
+          "text": "Has complained about frequent messaging. Reduced SMS frequency limit to 1 per week.",
+          "createdAt": "2026-04-12T09:30:00Z"
+        }
+      ],
+      "activities": [
+        {
+          "id": "a-6",
+          "type": "consent_change",
+          "title": "Opt-Out Marketing SMS",
+          "details": "User requested unsubscribe via Bulk SMS keyword STOP",
+          "timestamp": "2026-05-19T16:22:00Z"
+        }
+      ]
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp-1",
+      "name": "VIP Premium Perks Broadcast",
+      "channel": "WhatsApp",
+      "status": "Completed",
+      "targetSegment": "Premium Users",
+      "templateId": "tpl-wa-welcome",
+      "createdAt": "2026-05-01T10:00:00Z",
+      "metrics": {
+        "sent": 120,
+        "delivered": 120,
+        "read": 114,
+        "replied": 48,
+        "failed": 0
+      }
+    },
+    {
+      "id": "camp-2",
+      "name": "Mid-Year Flash SMS Offer",
+      "channel": "Bulk SMS",
+      "status": "Completed",
+      "targetSegment": "Leads",
+      "templateId": "tpl-sms-flash",
+      "createdAt": "2026-05-10T12:00:00Z",
+      "metrics": {
+        "sent": 850,
+        "delivered": 812,
+        "read": 410,
+        "replied": 22,
+        "failed": 38
+      }
+    },
+    {
+      "id": "camp-3",
+      "name": "Trial Users Day-5 Onboarding",
+      "channel": "WhatsApp",
+      "status": "Active",
+      "targetSegment": "Trial Users",
+      "templateId": "tpl-wa-onboarding",
+      "createdAt": "2026-05-20T08:00:00Z",
+      "metrics": {
+        "sent": 45,
+        "delivered": 44,
+        "read": 38,
+        "replied": 12,
+        "failed": 1
+      }
+    },
+    {
+      "id": "camp-4",
+      "name": "Inactive User Winback Spark",
+      "channel": "Bulk SMS",
+      "status": "Scheduled",
+      "targetSegment": "Inactive Users",
+      "templateId": "tpl-sms-winback",
+      "createdAt": "2026-05-21T15:00:00Z",
+      "scheduledTime": "2026-05-25T14:00:00Z",
+      "metrics": {
+        "sent": 0,
+        "delivered": 0,
+        "read": 0,
+        "replied": 0,
+        "failed": 0
+      }
+    }
+  ],
+  "templates": [
+    {
+      "id": "tpl-wa-welcome",
+      "name": "VIP Welcome Special",
+      "channel": "WhatsApp",
+      "content": "Hello {{name}}! Welcome to OmniChannel Platform. 🚀 As a Premium Subscriber, we're giving you direct VIP support. Text 'ASSIST' to open a live chat with our expert bot. Reply STOP to opt out.",
+      "approved": true
+    },
+    {
+      "id": "tpl-sms-flash",
+      "name": "Lead Conversion Flash 15",
+      "channel": "Bulk SMS",
+      "content": "OmniChannel VIP: Hey {{name}}! Get 15% off your growth plan today. Use coupon GROWTH15 at checkout. Valid for 48h. Opt-out reply UNSUB.",
+      "approved": true
+    },
+    {
+      "id": "tpl-wa-onboarding",
+      "name": "Onboarding Check",
+      "channel": "WhatsApp",
+      "content": "Hi {{name}}, how has your trial been? Did you manage to test our Sandbox Chat simulator? Let us know if you want a callback support agent to schedule a workspace brief.",
+      "approved": true
+    },
+    {
+      "id": "tpl-sms-winback",
+      "name": "Winback SMS offer",
+      "channel": "Bulk SMS",
+      "content": "We miss you {{name}}! Connect back with OmniChannel Platform and claim 100 free SMS credits today: https://growthhq.co/win-back",
+      "approved": true
+    }
+  ],
+  "personas": [
+    {
+      "id": "p-1",
+      "name": "Support Desk Hero",
+      "systemInstruction": "You are a professional corporate support coordinator for OmniChannel SaaS platform. Answer user technical questions calmly and list step-by-step guidance. Be concise and empathetic.",
+      "temperature": 0.6,
+      "isActive": true,
+      "description": "Handles customer support queries politely and triggers human escalation if requested."
+    },
+    {
+      "id": "p-2",
+      "name": " Friendly chat",
+      "systemInstruction": "You are a friendly, witty, and conversational chat helper who keeps communication breezy, lighthearted, and highly active. Encourage user conversion.",
+      "temperature": 0.9,
+      "isActive": false,
+      "description": "Ideal for automated conversational flows and friendly checkins."
+    }
+  ],
+  "chatMessages": [
+    {
+      "id": "msg-1780149268694",
+      "sender": "user",
+      "text": "hi i need help, can you explain campaign triggers",
+      "timestamp": "2026-05-30T13:54:28.694Z"
+    },
+    {
+      "id": "msg-1780149277012",
+      "sender": "bot",
+      "text": "Hello! I would be more than happy to help you understand campaign triggers. It is completely normal to have questions about this, as they are the backbone of automated customer engagement. \n\nIn our OmniChannel SaaS platform, a **Campaign Trigger** is essentially an automated \"if-this-then-that\" rule. It tells the system to automatically send a message (via Email, SMS, WhatsApp, or Push Notification) the moment a customer performs a specific action or meets a certain condition.\n\nHere is a quick breakdown of how they work and a step-by-step guide on how to set one up.\n\n---\n\n### Common Types of Triggers\n1. **Behavior-Based:** Triggered when a customer does something (e.g., abandons a shopping cart, clicks a specific link, or visits a pricing page).\n2. **Time-Based:** Triggered by a date or time frame (e.g., a customer’s birthday, or 30 days of inactivity).\n3. **Transactional:** Triggered by a system event (e.g., account creation, successful payment, or shipping updates).\n\n---\n\n### Step-by-Step: How to Set Up a Campaign Trigger\n\nTo set up a triggered campaign in your dashboard, please follow these steps:\n\n1. **Navigate to Campaigns:** \n   Log into your portal and go to the **Campaigns** or **Journeys** tab on your left-hand navigation menu.\n2. **Create a New Campaign:** \n   Click on **Create Campaign** and select **Automated/Triggered Campaign**.\n3. **Select Your Trigger Source:** \n   Choose what will start the campaign. You will see options like *User Activity*, *Date/Time*, or *API/Webhook*.\n4. **Define the Trigger Condition:** \n   Specify the exact action. *(For example: If \"User signs up for newsletter\" or \"Cart is abandoned for 2 hours\".)*\n5. **Choose Your Channels (OmniChannel):** \n   Select how you want to reach them. You can set it to send an **Email** first, and if they don't open it within 24 hours, automatically trigger an **SMS**.\n6. **Test and Publish:** \n   We always recommend sending a test message to yourself first. Once satisfied, click **Activate** or **Publish**.\n\nI hope this helps clarify how triggers can automate your workflow! If you have a specific campaign scenario in mind that you would like to build together, please let me know and we can walk through it step-by-step.",
+      "timestamp": "2026-05-30T13:54:37.011Z",
+      "isSimulated": false
+    },
+    {
+      "id": "msg-1780149469812",
+      "sender": "user",
+      "text": "build together ",
+      "timestamp": "2026-05-30T13:57:49.812Z"
+    },
+    {
+      "id": "msg-1780149474784",
+      "sender": "bot",
+      "text": "Hello! It is a pleasure to partner with you. Building and customizing your OmniChannel workspace is an exciting step, and I am here to ensure the process is seamless and successful for your team. \n\nTo help us collaborate effectively and get your project off the ground, here is a simple step-by-step framework we can follow:\n\n### Step 1: Define Your Objective\nBefore we configure the platform, let’s identify your primary goal. \n*   *Are we connecting new communication channels (e.g., WhatsApp, SMS, Email, Live Chat)?*\n*   *Are we setting up automated workflows or AI chatbots?*\n*   *Are we integrating your CRM (e.g., Salesforce, HubSpot) via APIs?*\n\n### Step 2: Access Your Admin Console\nPlease ensure you have the necessary permissions:\n1. Log in to your **OmniChannel SaaS Dashboard**.\n2. Navigate to the **Settings** or **Developer Console** (depending on your goal).\n3. Ensure your API keys or channel credentials are ready if we are doing an integration.\n\n### Step 3: Map the Customer Journey\nWe will outline how data and messages should flow. For example:\n*   *Customer sends a message on Channel A $\\rightarrow$ Routed to Department B $\\rightarrow$ Logged in CRM C.*\n\n### Step 4: Build and Test\nOnce we lock in the requirements, we will configure the system in a sandbox/testing environment first to ensure zero disruption to your live operations.\n\n***\n\n**How would you like to begin?** Please let me know what specific channel, integration, or workflow you would like to build today, and we will take the very next step together.",
+      "timestamp": "2026-05-30T13:57:54.783Z",
+      "isSimulated": false
+    },
+    {
+      "id": "msg-1780149486715",
+      "sender": "user",
+      "text": "hi",
+      "timestamp": "2026-05-30T13:58:06.715Z"
+    },
+    {
+      "id": "msg-1780149490869",
+      "sender": "bot",
+      "text": "Hey there! *virtual high five* 🖐️ \n\nSo glad you stopped by! I was just sitting here thinking, \"My day is missing some spark,\" and bam—here you are! \n\nWhat are we conquering today? I'm ready to help you brainstorm your next million-dollar idea, write some killer copy, or solve whatever puzzle is on your mind. \n\nTell me, what is **one** thing we can cross off your to-do list right now? Let's get to work and make some magic happen! ✨",
+      "timestamp": "2026-05-30T13:58:10.868Z",
+      "isSimulated": false
+    }
+  ],
+  "chatLogs": [
+    {
+      "id": "cl-ldxog",
+      "timestamp": "2026-05-30T13:58:10.869Z",
+      "prompt": "hi",
+      "response": "Hey there! *virtual high five* 🖐️ \n\nSo glad you stopped by! I was just sitting here thinking, \"My day is missing some spark,\" and bam—here you are! \n\nWhat are we conquering today? I'm ready to help you brainstorm your next million-dollar idea, write some killer copy, or solve whatever puzzle is on your mind. \n\nTell me, what is **one** thing we can cross off your to-do list right now? Let's get to work and make some magic happen! ✨",
+      "tokensUsed": 627,
+      "success": true,
+      "isFallback": false
+    },
+    {
+      "id": "cl-5pa5a",
+      "timestamp": "2026-05-30T13:57:54.784Z",
+      "prompt": "build together ",
+      "response": "Hello! It is a pleasure to partner with you. Building and customizing your OmniChannel workspace is an exciting step, and I am here to ensure the process is seamless and successful for your team. \n\nTo help us collaborate effectively and get your project off the ground, here is a simple step-by-step framework we can follow:\n\n### Step 1: Define Your Objective\nBefore we configure the platform, let’s identify your primary goal. \n*   *Are we connecting new communication channels (e.g., WhatsApp, SMS, Email, Live Chat)?*\n*   *Are we setting up automated workflows or AI chatbots?*\n*   *Are we integrating your CRM (e.g., Salesforce, HubSpot) via APIs?*\n\n### Step 2: Access Your Admin Console\nPlease ensure you have the necessary permissions:\n1. Log in to your **OmniChannel SaaS Dashboard**.\n2. Navigate to the **Settings** or **Developer Console** (depending on your goal).\n3. Ensure your API keys or channel credentials are ready if we are doing an integration.\n\n### Step 3: Map the Customer Journey\nWe will outline how data and messages should flow. For example:\n*   *Customer sends a message on Channel A $\\rightarrow$ Routed to Department B $\\rightarrow$ Logged in CRM C.*\n\n### Step 4: Build and Test\nOnce we lock in the requirements, we will configure the system in a sandbox/testing environment first to ensure zero disruption to your live operations.\n\n***\n\n**How would you like to begin?** Please let me know what specific channel, integration, or workflow you would like to build today, and we will take the very next step together.",
+      "tokensUsed": 829,
+      "success": true,
+      "isFallback": false
+    },
+    {
+      "id": "cl-xvqgj",
+      "timestamp": "2026-05-30T13:54:37.012Z",
+      "prompt": "hi i need help, can you explain campaign triggers",
+      "response": "Hello! I would be more than happy to help you understand campaign triggers. It is completely normal to have questions about this, as they are the backbone of automated customer engagement. \n\nIn our OmniChannel SaaS platform, a **Campaign Trigger** is essentially an automated \"if-this-then-that\" rule. It tells the system to automatically send a message (via Email, SMS, WhatsApp, or Push Notification) the moment a customer performs a specific action or meets a certain condition.\n\nHere is a quick breakdown of how they work and a step-by-step guide on how to set one up.\n\n---\n\n### Common Types of Triggers\n1. **Behavior-Based:** Triggered when a customer does something (e.g., abandons a shopping cart, clicks a specific link, or visits a pricing page).\n2. **Time-Based:** Triggered by a date or time frame (e.g., a customer’s birthday, or 30 days of inactivity).\n3. **Transactional:** Triggered by a system event (e.g., account creation, successful payment, or shipping updates).\n\n---\n\n### Step-by-Step: How to Set Up a Campaign Trigger\n\nTo set up a triggered campaign in your dashboard, please follow these steps:\n\n1. **Navigate to Campaigns:** \n   Log into your portal and go to the **Campaigns** or **Journeys** tab on your left-hand navigation menu.\n2. **Create a New Campaign:** \n   Click on **Create Campaign** and select **Automated/Triggered Campaign**.\n3. **Select Your Trigger Source:** \n   Choose what will start the campaign. You will see options like *User Activity*, *Date/Time*, or *API/Webhook*.\n4. **Define the Trigger Condition:** \n   Specify the exact action. *(For example: If \"User signs up for newsletter\" or \"Cart is abandoned for 2 hours\".)*\n5. **Choose Your Channels (OmniChannel):** \n   Select how you want to reach them. You can set it to send an **Email** first, and if they don't open it within 24 hours, automatically trigger an **SMS**.\n6. **Test and Publish:** \n   We always recommend sending a test message to yourself first. Once satisfied, click **Activate** or **Publish**.\n\nI hope this helps clarify how triggers can automate your workflow! If you have a specific campaign scenario in mind that you would like to build together, please let me know and we can walk through it step-by-step.",
+      "tokensUsed": 1363,
+      "success": true,
+      "isFallback": false
+    },
+    {
+      "id": "cl-1",
+      "timestamp": "2026-05-22T09:01:00Z",
+      "prompt": "Hello, I need help setting up my WhatsApp webhook.",
+      "response": "Hi there! I would be happy to guide you with webhook structures. Please verify that you have registered a template in Settings > Sandbox setup.",
+      "tokensUsed": 145,
+      "success": true,
+      "isFallback": true
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf-1",
+      "name": "SaaS Signup Onboarding Journey",
+      "trigger": "New signup",
+      "description": "Triggered whenever a brand new lead is recorded on the CRM roster.",
+      "isActive": true,
+      "runsCount": 35,
+      "lastRun": "2026-05-30T13:46:56.386Z",
+      "steps": [
+        {
+          "id": "ws-1",
+          "type": "trigger",
+          "label": "Event: New Signup recorded",
+          "config": {
+            "source": "web_api"
+          }
+        },
+        {
+          "id": "ws-2",
+          "type": "ai_action",
+          "label": "Analyze Lead using Gemini AI",
+          "config": {
+            "prompt": "Analyze this telephone area code and name to create personalization tags"
+          }
+        },
+        {
+          "id": "ws-3",
+          "type": "campaign",
+          "label": "Dispatch WhatsApp Welcome Template",
+          "config": {
+            "templateId": "tpl-wa-welcome"
+          }
+        },
+        {
+          "id": "ws-4",
+          "type": "delay",
+          "label": "Hold execution for 2 Days",
+          "config": {
+            "durationDays": 2
+          }
+        },
+        {
+          "id": "ws-5",
+          "type": "condition",
+          "label": "Verify user response state",
+          "config": {
+            "conditionName": "Has Replied"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wf-2",
+      "name": "SLA Support Spillover Escalation",
+      "trigger": "Ticket escalated",
+      "description": "Ensures open issues receive high-priority SLA tracking and immediate notification alerts.",
+      "isActive": true,
+      "runsCount": 9,
+      "lastRun": "2026-05-30T13:47:12.365Z",
+      "steps": [
+        {
+          "id": "ws-6",
+          "type": "trigger",
+          "label": "Event: SLA breached",
+          "config": {
+            "limitMinutes": 30
+          }
+        },
+        {
+          "id": "ws-7",
+          "type": "ai_action",
+          "label": "Generate support conversation summary",
+          "config": {}
+        },
+        {
+          "id": "ws-8",
+          "type": "notification",
+          "label": "Dispatch Voice Escalation Alert",
+          "config": {
+            "contactNo": "+16175550182"
+          }
+        }
+      ]
+    }
+  ],
+  "workflowActivityLogs": [
+    {
+      "id": "wl-rbw06",
+      "workflowId": "wf-2",
+      "workflowName": "SLA Support Spillover Escalation",
+      "status": "success",
+      "timestamp": "2026-05-30T13:47:12.366Z",
+      "executedStepsCount": 3,
+      "details": "Trigger \"Ticket escalated\" successfully initialized. Processed conditional step sequence [Event: SLA breached -> Generate support conversation summary -> Dispatch Voice Escalation Alert]."
+    },
+    {
+      "id": "wl-ozhk0",
+      "workflowId": "wf-1",
+      "workflowName": "SaaS Signup Onboarding Journey",
+      "status": "success",
+      "timestamp": "2026-05-30T13:46:56.387Z",
+      "executedStepsCount": 5,
+      "details": "Trigger \"New signup\" successfully initialized. Processed conditional step sequence [Event: New Signup recorded -> Analyze Lead using Gemini AI -> Dispatch WhatsApp Welcome Template -> Hold execution for 2 Days -> Verify user response state]."
+    },
+    {
+      "id": "wl-1",
+      "workflowId": "wf-1",
+      "workflowName": "SaaS Signup Onboarding Journey",
+      "status": "success",
+      "timestamp": "2026-05-22T10:15:00Z",
+      "executedStepsCount": 3,
+      "details": "Executed Trigger -> AI Analytics Tagging -> WhatsApp Dispatch to Rajesh Kumar successfully. Remaining delay sequence active."
+    }
+  ],
+  "tickets": [
+    {
+      "id": "t-1",
+      "contactId": "c-1",
+      "contactName": "Rajesh Kumar",
+      "contactPhone": "+919876543210",
+      "title": "WhatsApp Opt-in Webhook Failure",
+      "description": "Trying to fire opt-in update webhook but hitting HTTP 504 gateway timeout from production sandbox servers.",
+      "priority": "High",
+      "status": "Open",
+      "assignedAgent": "Marcus Wright",
+      "slaLimitMinutes": 30,
+      "createdAt": "2026-05-22T11:00:00Z",
+      "updatedAt": "2026-05-22T11:45:00Z",
+      "aiSentiment": "negative",
+      "aiSummary": "The customer is frustrated regarding a 504 Gateway timeout hitting their opt-in webhooks. Immediate configuration resolution needed.",
+      "activities": [
+        {
+          "author": "System AI",
+          "text": "Ticket created. Sentiment analyzed: NEGATIVE. Scheduled SLA countdown to 30 mins.",
+          "timestamp": "2026-05-22T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "t-2",
+      "contactId": "c-3",
+      "contactName": "Amir Al-Othman",
+      "contactPhone": "+971501234567",
+      "title": "Bulk SMS campaign delivery failure",
+      "description": "Created campaign Mid-Year Flash. Target contacts inside India and UAE reporting that messages are pending in Draft or failed completely.",
+      "priority": "Urgent",
+      "status": "Escalated",
+      "assignedAgent": "Sarah Connor",
+      "slaLimitMinutes": 15,
+      "createdAt": "2026-05-22T08:30:00Z",
+      "updatedAt": "2026-05-22T10:00:00Z",
+      "aiSentiment": "negative",
+      "aiSummary": "Critical outbound campaign delivery failure impacting UAE and India country-routing channels. Needs instant re-routing.",
+      "activities": [
+        {
+          "author": "System AI",
+          "text": "SMS provider feedback analyzed. Carrier restriction rules flagged. Escalated to Network Operator.",
+          "timestamp": "2026-05-22T08:35:00Z"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "id": "fq-1",
+      "question": "How standard WhatsApp Opt-In works?",
+      "answer": "To text users on WhatsApp, you must track consent. We support web-form integrations and keyword opt-ins. Users may reply 'START' or 'YES' to opt in.",
+      "tags": [
+        "whatsapp",
+        "compliance",
+        "opt-in"
+      ]
+    },
+    {
+      "id": "fq-2",
+      "question": "How frequent is Bulk SMS throttled?",
+      "answer": "To optimize carrier network delivery, we throttle campaign SMS triggers to standard levels (e.g., 50 SMS/second). Throttling keeps your sender ID spam rating clean.",
+      "tags": [
+        "sms",
+        "throttling",
+        "delivery"
+      ]
+    },
+    {
+      "id": "fq-3",
+      "question": "What is India DPDP Compliance policy?",
+      "answer": "India's Digital Personal Data Protection Act requires unambiguous, revocable consent. Opt-out channels must be standard and direct in local SMS and WhatsApp templates.",
+      "tags": [
+        "compliance",
+        "privacy",
+        "dpdp"
+      ]
+    }
+  ],
+  "consentLogs": [
+    {
+      "id": "cn-log-1",
+      "contactId": "c-1",
+      "contactName": "Rajesh Kumar",
+      "type": "marketing",
+      "action": "grant",
+      "ipAddress": "123.45.67.89",
+      "source": "SMS opt-in START keyword",
+      "timestamp": "2026-05-18T09:12:00Z"
+    },
+    {
+      "id": "cn-log-2",
+      "contactId": "c-5",
+      "contactName": "Dianne Russell",
+      "type": "marketing",
+      "action": "revoke",
+      "ipAddress": "98.76.54.32",
+      "source": "WhatsApp Chat OPT-OUT",
+      "timestamp": "2026-05-19T16:22:00Z"
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "tm-1",
+      "fullName": "Nirjara Jain",
+      "email": "nirjarajain01@gmail.com",
+      "role": "ORG_OWNER",
+      "status": "Active",
+      "joinedAt": "2026-01-01"
+    },
+    {
+      "id": "tm-2",
+      "fullName": "Sarah Connor",
+      "email": "sarah@growthhq.co",
+      "role": "ORG_ADMIN",
+      "status": "Active",
+      "joinedAt": "2026-02-05"
+    },
+    {
+      "id": "tm-3",
+      "fullName": "Marcus Wright",
+      "email": "marcus@growthhq.co",
+      "role": "SUPPORT_AGENT",
+      "status": "Active",
+      "joinedAt": "2026-03-20"
+    },
+    {
+      "id": "tm-4",
+      "fullName": "John Connor",
+      "email": "john@growthhq.co",
+      "role": "MARKETING_MANAGER",
+      "status": "Active",
+      "joinedAt": "2026-04-10"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "act-50gnp",
+      "actor": "Workflow Daemon",
+      "action": "Automation Trigger Active: SLA Support Spillover Escalation",
+      "module": "Workflows",
+      "details": "Successfully scheduled auto campaigns.",
+      "timestamp": "2026-05-30T13:47:12.366Z"
+    },
+    {
+      "id": "act-xn6ci",
+      "actor": "Workflow Daemon",
+      "action": "Automation Trigger Active: SaaS Signup Onboarding Journey",
+      "module": "Workflows",
+      "details": "Successfully scheduled auto campaigns.",
+      "timestamp": "2026-05-30T13:46:56.387Z"
+    },
+    {
+      "id": "act-1",
+      "actor": "Sarah Connor",
+      "action": "Updated Campaign Template",
+      "module": "Campaigns",
+      "details": "Modified template Lead Conversion Flash 15 content.",
+      "timestamp": "2026-05-22T11:21:00Z"
+    },
+    {
+      "id": "act-2",
+      "actor": "Marcus Wright",
+      "action": "Assigned Support Ticket",
+      "module": "Support",
+      "details": "Assigned Ticket #t-1 to Marcus Wright.",
+      "timestamp": "2026-05-22T11:45:00Z"
+    }
+  ],
+  "settings": {
+    "orgName": "GrowthHQ SaaS",
+    "avatarUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=150&auto=format&fit=crop",
+    "whatsappPhonePlaceholder": "+1 (855) 512-OMNI",
+    "smsGatewayUrl": "https://api.omnichannel.sms/v1/gateway",
+    "aiModelSelected": "gemini-3.5-flash",
+    "safetyLevel": "Block Medium and High Harmful Content",
+    "supportSlaMinutes": 30,
+    "optInTracking": true,
+    "unsubscribeKeyword": "STOP",
+    "campaignThrottlingRate": 100,
+    "callRequestCount": 2
+  }
+}
